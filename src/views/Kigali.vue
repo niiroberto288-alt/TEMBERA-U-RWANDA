@@ -1,0 +1,1 @@
+<template><h1>Kigali city</h1></template>
