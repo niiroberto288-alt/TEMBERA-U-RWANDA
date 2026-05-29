@@ -1,6 +1,7 @@
 <template>
   <main class="about-page bg-slate-50 text-slate-900">
-    <section class="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.25),_transparent_40%),_linear-gradient(180deg,_rgb(6,78,59),_rgb(10,63,48))] px-6 py-20 text-white md:px-12" style="background-image:url('/assets/images/38421403065964620.jpg'); background-size: cover; background-position: center;">
+    <section class="relative overflow-hidden bg-slate-950 bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.25),_transparent_40%),_linear-gradient(180deg,_rgb(6,78,59),_rgb(10,63,48))] px-6 py-20 text-white md:px-12" style="background-image:url('/assets/images/38421403065964620.jpg'); background-size: cover; background-position: center;">
+      <div class="absolute inset-0 bg-slate-950/70"></div>
       <div class="relative z-10 mx-auto max-w-5xl text-center">
         <p class="text-sm uppercase tracking-[0.45em] text-emerald-200">About Rwanda</p>
         <h1 class="mt-4 text-4xl font-extrabold md:text-5xl">A vibrant country built on resilience, nature, and hospitality</h1>
@@ -28,18 +29,18 @@
 
         <div class="rounded-[2rem] bg-gradient-to-br from-emerald-800 to-slate-900 p-8 text-white shadow-2xl shadow-emerald-900/20">
           <h3 class="text-2xl font-semibold">What makes Rwanda special</h3>
-          <ul class="mt-6 space-y-5 text-slate-100/90">
-            <li class="rounded-3xl bg-white/5 p-5">
-              <strong class="block text-xl font-semibold">Gorilla Conservation</strong>
-              <span class="block mt-2 text-slate-300">A global leader in protecting mountain gorillas and their forest home.</span>
+          <ul class="mt-6 space-y-5">
+            <li class="rounded-3xl bg-slate-950 border border-slate-800 p-6 shadow-xl">
+              <strong class="block text-xl font-semibold text-white">Gorilla Conservation</strong>
+              <span class="block mt-2 text-slate-200">A global leader in protecting mountain gorillas and their forest home.</span>
             </li>
-            <li class="rounded-3xl bg-white/5 p-5">
-              <strong class="block text-xl font-semibold">Cultural Renewal</strong>
-              <span class="block mt-2 text-slate-300">Rich arts, music, and storytelling rooted in Rwandan heritage.</span>
+            <li class="rounded-3xl bg-slate-950 border border-slate-800 p-6 shadow-xl">
+              <strong class="block text-xl font-semibold text-white">Cultural Renewal</strong>
+              <span class="block mt-2 text-slate-200">Rich arts, music, and storytelling rooted in Rwandan heritage.</span>
             </li>
-            <li class="rounded-3xl bg-white/5 p-5">
-              <strong class="block text-xl font-semibold">Scenic Journeys</strong>
-              <span class="block mt-2 text-slate-300">Rolling hills, lakes, and forest trails that invite exploration.</span>
+            <li class="rounded-3xl bg-slate-950 border border-slate-800 p-6 shadow-xl">
+              <strong class="block text-xl font-semibold text-white">Scenic Journeys</strong>
+              <span class="block mt-2 text-slate-200">Rolling hills, lakes, and forest trails that invite exploration.</span>
             </li>
           </ul>
         </div>
