@@ -1,7 +1,6 @@
 <template>
   <main class="about-page bg-slate-50 text-slate-900">
-    <section class="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.25),_transparent_40%),_linear-gradient(180deg,_rgb(6,78,59),_rgb(10,63,48))] px-6 py-20 text-white md:px-12">
-      <div class="absolute inset-0 bg-[url('/src/assets/images/musinga.jpg')] bg-cover bg-center opacity-30"></div>
+    <section class="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.25),_transparent_40%),_linear-gradient(180deg,_rgb(6,78,59),_rgb(10,63,48))] px-6 py-20 text-white md:px-12" style="background-image:url('/assets/images/38421403065964620.jpg'); background-size: cover; background-position: center;">
       <div class="relative z-10 mx-auto max-w-5xl text-center">
         <p class="text-sm uppercase tracking-[0.45em] text-emerald-200">About Rwanda</p>
         <h1 class="mt-4 text-4xl font-extrabold md:text-5xl">A vibrant country built on resilience, nature, and hospitality</h1>

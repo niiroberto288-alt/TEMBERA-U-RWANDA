@@ -1,7 +1,6 @@
 <template>
   <main class="contact-page bg-slate-100 text-slate-900">
-    <section class="relative overflow-hidden bg-[url('/src/assets/images/musinga.jpg')] bg-cover bg-center py-24 text-white">
-      <div class="absolute inset-0 bg-slate-900/70"></div>
+    <section class="relative overflow-hidden bg-cover bg-center py-24 text-white" style="background-image:url('/assets/images/Rwanda 🇷🇼.jpg');">
       <div class="relative mx-auto max-w-6xl px-6 text-center">
         <p class="text-sm uppercase tracking-[0.35em] text-emerald-300">Get in touch</p>
         <h1 class="mt-4 text-4xl font-bold md:text-5xl">Let's plan your Rwanda adventure</h1>
