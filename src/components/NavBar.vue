@@ -1,13 +1,13 @@
 
 <template>
     <nav class="bg-green-800 text-white shadow-md">
-     <div class="w-full px-4 py-4 flex items-center justify-between">
+    <div class="w-full px-0 py-4 flex items-center justify-between">
      <div class="flex items-center gap-3">
         <img src="../assets/images/vist Rwanda.jpg" alt="LOGO" class="w-10 h-10 bg-white rounded-full p-1 object-contain flex-shrink-0"/>
         <h1 class="text-2xl font-bold tracking-wide">TEMBERA U RWANDA</h1>
 
     </div>
-    <ul class="flex gap-8 text-sm font-medium mr-4">
+    <ul class="flex gap-8 text-sm font-medium">
         <li><a href="/" class="hover:text-yellow-300 transition">Home</a></li>
         <li><a href="/About" class="hover:text-yellow-300 transition">About</a></li>
         <li><a href="/Services" class="hover:text-yellow-300 transition">Services</a> </li>
