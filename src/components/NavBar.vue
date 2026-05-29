@@ -3,7 +3,7 @@
    <nav class="bg-green-800 text-white shadow-md">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
-        <img src="../assets/images/vist Rwanda.png" alt="LOGO" class="w-10 h-10 bg-white rounded-full p-1 object-contain flex-shrink-0"/>
+        <img src="../assets/images/vist Rwanda.jpg" alt="LOGO" class="w-10 h-10 bg-white rounded-full p-1 object-contain flex-shrink-0"/>
         <h1 class="text-2xl font-bold tracking-wide">TEMBERA U RWANDA</h1>
 
     </div>
