@@ -1,6 +1,8 @@
 <script setup>
 import { current } from '../lang.js'
 import kigaliImage from '../assets/images/kigali-skyline.jpg'
+import visitRwandaPhoto from '../assets/images/visit-Rwanda.jpg'
+import rwandaFlag from '../assets/images/Rwanda-flag.jpg'
 </script>
 
 <template>
@@ -27,6 +29,29 @@ import kigaliImage from '../assets/images/kigali-skyline.jpg'
           <h2 class="text-2xl font-bold text-slate-900">Urban Life</h2>
           <p class="mt-4 text-slate-600 leading-7">Enjoy vibrant nightlife, green public spaces, and easy access to cultural tours in Kigali.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 md:px-12 bg-slate-950 text-white">
+      <div class="mx-auto max-w-6xl grid gap-10 lg:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">More About Kigali</h2>
+          <p class="mt-6 text-slate-300 leading-8">Kigali is Rwanda’s clean and modern capital city, known for its museums, coffee shops, and welcoming neighborhoods. It’s also a hub for culture, history, and city-based excursions into the country’s natural beauty.</p>
+          <ul class="mt-6 space-y-4 text-slate-300">
+            <li>• Visit the Kigali Genocide Memorial and learn Rwanda’s story of recovery.</li>
+            <li>• Explore craft markets, contemporary art galleries, and local fashion boutiques.</li>
+            <li>• Sample Rwandan coffee, street food, and farm-to-table dining in vibrant districts.</li>
+          </ul>
+        </div>
+
+        <div class="grid gap-6">
+          <div class="overflow-hidden rounded-4xl shadow-2xl">
+            <img :src="visitRwandaPhoto" alt="Street scene in Kigali" class="h-72 w-full object-cover" />
+          </div>
+          <div class="overflow-hidden rounded-4xl shadow-2xl">
+            <img :src="rwandaFlag" alt="Rwanda flag in Kigali" class="h-72 w-full object-cover" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
