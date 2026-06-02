@@ -1,5 +1,11 @@
 <script setup>
+import { computed } from 'vue'
 import { current, state, setLanguage } from '../lang.js'
+
+const languageLabel = computed(() => {
+  const lang = state.language
+  return lang === 'rw' ? 'Kinyarwanda' : lang === 'fr' ? 'Français' : 'English'
+})
 </script>
 
 <template>
@@ -14,17 +20,17 @@ import { current, state, setLanguage } from '../lang.js'
         <li class="shrink-0"><RouterLink to="/" class="hover:text-yellow-300 transition">{{ current.home }}</RouterLink></li>
         <li class="shrink-0"><RouterLink to="/about" class="hover:text-yellow-300 transition">{{ current.about }}</RouterLink></li>
         <li class="shrink-0"><RouterLink to="/services" class="hover:text-yellow-300 transition">{{ current.services }}</RouterLink></li>
-        <li class="shrink-0"><RouterLink to="/contact" class="hover:text-yellow-300 transition">{{ current.contact }}</RouterLink></li>
+
         <li class="relative group shrink-0">
-          <RouterLink to="/gallery" class="hover:text-yellow-300">{{ current.gallery }} <span>V</span></RouterLink>
-          <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-40 z-50 pt-2" style="top:100%;left:0">
+          <RouterLink to="/gallery" class="hover:text-yellow-300 transition">{{ current.gallery }} <span>▾</span></RouterLink>
+          <ul class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute bg-white text-green-900 rounded shadow w-40 z-50 pt-2" style="top:100%;left:0">
             <li><RouterLink to="/photos" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.photos }}</RouterLink></li>
             <li><RouterLink to="/videos" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.videos }}</RouterLink></li>
           </ul>
         </li>
         <li class="relative group shrink-0">
-          <a href="#" @click.prevent class="hover:text-yellow-300">{{ current.destination }} <span>V</span></a>
-          <ul class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute bg-white text-green-900 rounded shadow w-40 z-50 pt-2" style="top:100%;right:0">
+          <button type="button" class="flex items-center gap-1 hover:text-yellow-300 transition bg-transparent text-left">{{ current.destination }} <span>▾</span></button>
+          <ul class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute bg-white text-green-900 rounded shadow w-40 z-50 pt-2" style="top:100%;right:0">
             <li><RouterLink to="/nP" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.northern }}</RouterLink></li>
             <li><RouterLink to="/sP" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.southern }}</RouterLink></li>
             <li><RouterLink to="/eP" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.eastern }}</RouterLink></li>
@@ -32,12 +38,19 @@ import { current, state, setLanguage } from '../lang.js'
             <li><RouterLink to="/wP" class="block px-4 py-2 hover:bg-green-200 text-green-900">{{ current.western }}</RouterLink></li>
           </ul>
         </li>
+        <li class="shrink-0"><RouterLink to="/contact" class="hover:text-yellow-300 transition">{{ current.contact }}</RouterLink></li>
       </ul>
 
-      <div class="flex gap-2 shrink-0 items-center">
-        <button type="button" @click="setLanguage('rw')" :class="['rounded-full border h-10 w-10 text-[11px] md:text-xs transition flex items-center justify-center', state.language === 'rw' ? 'bg-white text-green-900 border-white' : 'bg-white/10 text-white border-white/70 hover:bg-white hover:text-green-900']" title="Kinyarwanda">RW</button>
-        <button type="button" @click="setLanguage('fr')" :class="['rounded-full border h-10 w-10 text-[11px] md:text-xs transition flex items-center justify-center', state.language === 'fr' ? 'bg-white text-green-900 border-white' : 'bg-white/10 text-white border-white/70 hover:bg-white hover:text-green-900']" title="Français">FR</button>
-        <button type="button" @click="setLanguage('en')" :class="['rounded-full border h-10 w-10 text-[11px] md:text-xs transition flex items-center justify-center', state.language === 'en' ? 'bg-white text-green-900 border-white' : 'bg-white/10 text-white border-white/70 hover:bg-white hover:text-green-900']" title="English">EN</button>
+      <div class="relative group shrink-0">
+        <button type="button" class="rounded-full border h-10 px-4 text-sm flex items-center gap-2 bg-white/10 text-white border-white/70 hover:bg-white hover:text-green-900">
+          <span class="normal-case">{{ languageLabel }}</span>
+          <span class="opacity-80">▾</span>
+        </button>
+        <ul class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute bg-white text-green-900 rounded shadow w-36 z-50 pt-2" style="top:100%;right:0">
+          <li><button @click="setLanguage('rw')" class="block w-full text-left px-4 py-2 hover:bg-green-200">Kinyarwanda</button></li>
+          <li><button @click="setLanguage('fr')" class="block w-full text-left px-4 py-2 hover:bg-green-200">Français</button></li>
+          <li><button @click="setLanguage('en')" class="block w-full text-left px-4 py-2 hover:bg-green-200">English</button></li>
+        </ul>
       </div>
     </div>
   </nav>

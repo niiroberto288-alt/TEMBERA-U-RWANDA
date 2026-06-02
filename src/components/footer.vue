@@ -15,8 +15,8 @@ import { current } from '../lang.js'
         <ul class="space-y-2 text-sm">
           <li><RouterLink to="/" class="text-green-200 hover:text-yellow-300">{{ current.home }}</RouterLink></li>
           <li><RouterLink to="/about" class="text-green-200 hover:text-yellow-300">{{ current.about }}</RouterLink></li>
-          <li><RouterLink to="/contact" class="text-green-200 hover:text-yellow-300">{{ current.contact }}</RouterLink></li>
           <li><RouterLink to="/services" class="text-green-200 hover:text-yellow-300">{{ current.services }}</RouterLink></li>
+          <li><RouterLink to="/contact" class="text-green-200 hover:text-yellow-300">{{ current.contact }}</RouterLink></li>
         </ul>
       </div>
 
@@ -42,7 +42,7 @@ import { current } from '../lang.js'
     </div>
 
     <div class="border-t border-green-600 mt-8 pt-4 text-sm">
-      <p class="text-center">{{ current.footerCopyright }}</p>
+      <p class="text-center">@2026 Visit Rwanda, NIYOMWUNGERI Roberto</p>
     </div>
   </footer>
 </template>

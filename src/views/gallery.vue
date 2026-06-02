@@ -49,14 +49,14 @@ import { current } from '../lang.js'
             </div>
           </div>
           <div class="overflow-hidden rounded-[2rem] bg-white shadow-xl">
-            <img src="/assets/images/68743894783.jpg" alt="Lake Kivu" class="h-72 w-full object-cover" />
+            <img src="/assets/images/lake-kivu.jpg" alt="Lake Kivu" class="h-72 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold text-slate-900">Lake Kivu shores</h3>
               <p class="mt-3 text-slate-600">Waterside retreats and sunsets over one of Africa’s most peaceful lakes.</p>
             </div>
           </div>
           <div class="overflow-hidden rounded-[2rem] bg-white shadow-xl">
-            <img src="/assets/images/Rwanda-flag.jpg" alt="Kigali city" class="h-72 w-full object-cover" />
+            <img src="/assets/images/kigali-skyline.jpg" alt="Kigali city" class="h-72 w-full object-cover" />
             <div class="p-6">
               <h3 class="text-xl font-semibold text-slate-900">Kigali city life</h3>
               <p class="mt-3 text-slate-600">Modern streets, markets, and the bustling heart of Rwanda’s capital.</p>
